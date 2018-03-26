@@ -56,7 +56,8 @@
       "php -r \"copy('.env.example', '.env');\""
     ],
     "test": [
-      "phpcs"
+      "phpcs --ignore=web/wp,vendor/ -n -s .",
+      "phpunit"
     ]
   }
 }
